@@ -1,0 +1,26 @@
+# node_modules
+node_modules
+
+# Config
+.vscode
+.parcel-cache
+.DS_Store
+
+# jetbrain
+.idea/*
+.yarn.lock
+
+# build
+dist
+build
+
+# etc
+.drpalette-client.iml
+env
+.env
+token.ts
+/packages/**/.env
+
+#turbo
+.turbo
+temp-tsconfig.json
