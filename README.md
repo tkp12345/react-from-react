@@ -5,6 +5,6 @@
 
 
 #### [ virtual-Dom ](https://github.com/tkp12345/react-from-react/tree/main/src/react/virtualDom)
-#### [ React-Error-Boundary ]([https://github.com/tkp12345/react-from-react/tree/main/src/react/virtualDom](https://github.com/tkp12345/react-from-react/tree/main/src/react-utils/utils/error)https://github.com/tkp12345/react-from-react/tree/main/src/react-utils/utils/error)
+#### [ React-Error-Boundary ](https://github.com/tkp12345/react-from-react/tree/main/src/react-utils/utils/error)
 #### [ react-life-cycle ](https://github.com/tkp12345/react-from-react/tree/main/src/react/life-cycle)
 
