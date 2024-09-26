@@ -1,14 +1,19 @@
-import React from 'react';
-import {QueryClient, QueryClientProvider} from "react-query";
-
-const queryClient = new QueryClient()
+import React from 'react'
+import { ToastContainer } from 'react-toastify'
+import { UseStateExample1 } from './react/hook/useState/useState-example-1'
+import { useMediaQuery } from './hooks/use-media-query'
 
 const App: React.FC = () => {
-    return (
-        <QueryClientProvider client={queryClient}>
+  const isTablet = useMediaQuery(`(max-width:780px)`)
 
-        </QueryClientProvider>
+  console.log(isTablet)
+  return (
+    <>
+      {/*<Test />*/}
 
-    )
+      <UseStateExample1 />
+      <ToastContainer />
+    </>
+  )
 }
-export default App;
+export default App
