@@ -1,18 +1,14 @@
 import React from 'react'
-import { ToastContainer } from 'react-toastify'
 import { UseStateExample1 } from './react/hook/useState/useState-example-1'
-import { useMediaQuery } from './hooks/use-media-query'
+import { useFlags } from 'launchdarkly-react-client-sdk'
 
 const App: React.FC = () => {
-  const isTablet = useMediaQuery(`(max-width:780px)`)
+  const { sample } = useFlags()
 
-  console.log(isTablet)
+  console.log('sample:', sample)
   return (
     <>
-      {/*<Test />*/}
-
       <UseStateExample1 />
-      <ToastContainer />
     </>
   )
 }
