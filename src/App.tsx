@@ -1,15 +1,9 @@
 import React from 'react'
-import { UseStateExample1 } from './react/hook/useState/useState-example-1'
-import { useFlags } from 'launchdarkly-react-client-sdk'
+import Test from './test'
 
 const App: React.FC = () => {
-  const { sample } = useFlags()
-
-  console.log('sample:', sample)
   return (
-    <>
-      <UseStateExample1 />
-    </>
+      <Test />
   )
 }
 export default App
