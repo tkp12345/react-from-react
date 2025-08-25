@@ -8,7 +8,6 @@ function getMimeType(src: string): string {
     webm: 'video/webm',
     ogg: 'video/ogg',
   }
-
   return mimeTypes[extension || ''] || 'video/mp4'
 }
 
