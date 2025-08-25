@@ -28,7 +28,7 @@ const OptimizedVideo = ({
   loop = true,
   ...rest
 }: Props) => {
-  const videoRef = useRef(null)
+  const videoRef = useRef<HTMLVideoElement|null>(null)
   const [shouldLoad, setShouldLoad] = useState(false) // <source> 주입 여부
 
   useEffect(() => {
