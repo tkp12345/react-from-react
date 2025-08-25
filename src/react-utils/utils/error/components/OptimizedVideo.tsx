@@ -82,7 +82,6 @@ const OptimizedVideo = ({
       controls={controls}
       {...rest}
     >
-      {' '}
       {shouldLoad && <source src={src} type={getMimeType(src)} />}
       Your browser does not support the video tag.{' '}
     </video>
