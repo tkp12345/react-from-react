@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import {useEffect, useRef} from 'react'
 import { Bitmap, fetchBitmapWithFallback } from '../utils/bitmap-utils'
 
 //TODO: cache 제한 로직 추가 - 오래된 항목을 지우거나 하는 방향으로 . ..
@@ -72,6 +72,12 @@ const useImageSequenceLoader = (imageUrls: string[], options: Opts = {}) => {
     }
     pump()
   }
+
+  useEffect(() => {
+    for(const c of inProgressRequestRef.current.values()) c.abort();
+    inProgressRequestRef.current.clear();
+    cacheRef.current.clear();
+  }, []);
 
   return { getBitmap, setCenter }
 }
